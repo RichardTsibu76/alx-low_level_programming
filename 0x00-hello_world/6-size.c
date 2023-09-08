@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-	printf("Size of a char: %ldbyte(s)\n", sizeof(char));
+	printf("Size of a char: %dbyte(s)\n", sizeof(char));
 
-	printf("Size of an int: %ldbyte(s)\n", sizeof(int));
+	printf("Size of an int: %dbyte(s)\n", sizeof(int));
 
 	printf("Size of a long int: %ldbyte(s)\n", sizeof(int));
 
 	printf("Size of a long long int: %ldbyte(s)\n", sizeof(long long int));
 
-	printf("Size of a float: %ldbyte(s)\n", sizeof(float));
+	printf("Size of a float: %fbyte(s)\n", sizeof(float));
 
 	return (0);
 }
