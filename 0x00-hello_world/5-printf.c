@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- * Description: Prints statement
  * main - This is the main entry
  * Return: Always return 0.
  */
