@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *_main - This is the main entry
+ *main - this is the main entry
  * Description: Calculating for the size of datatype
  *Return: Always return 0
  */
