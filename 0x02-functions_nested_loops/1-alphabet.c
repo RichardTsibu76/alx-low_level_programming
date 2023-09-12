@@ -1,9 +1,7 @@
 #include "main.h"
 /**
  *print_alphabet - This prints alphabet
- *main - This is the main entry.
- *Return: Has return
-*
+ *main - This is the main entry
 */
 void print_alphabet(void)
 {
@@ -16,5 +14,4 @@ void print_alphabet(void)
 
 	}
 	_putchar('\n');
-	return;
 }
