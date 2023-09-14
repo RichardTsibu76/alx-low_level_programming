@@ -4,7 +4,7 @@
 /**
  *print_sign - This prints the sign of a number
  *@n: Denote the number of evaluation
- *Return: returns 0 and prints 0 if n is 0, and ret -1 if -1 when n < 0
+ *Return: returns 1, 0, and -
  */
 int print_sign(int n)
 {
@@ -18,7 +18,7 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else 
+	else
 	{
 		_putchar('-');
 		return (-1);
