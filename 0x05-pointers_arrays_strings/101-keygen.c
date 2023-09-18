@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	int r;
-	char q;
+	char c;
+	int x;
 
 	srand(time(0));
-	while (r <= 2645)
+	while (x <= 2645)
 	{
-		q = rand() % 128;
-		r = r + q;
-		putchar(q);
+		c = rand() % 128;
+		x += c;
+		putchar(c);
 	}
-		putchar(2772 - r);
+		putchar(2772 - x);
 		return (0);
 }
