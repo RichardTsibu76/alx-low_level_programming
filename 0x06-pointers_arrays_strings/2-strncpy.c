@@ -1,9 +1,10 @@
 #include "main.h"
+#include <string.h>
 
 /**
- *__strncpy - Copies a string
- *@dest:Destination
- *@scr:String part to be manipualated
+ *_strncpy - Copies a string
+ *@dest:temporal storage.
+ *@src: This is source string
  *@n:the charater
  *Returns: this returns string
  */
