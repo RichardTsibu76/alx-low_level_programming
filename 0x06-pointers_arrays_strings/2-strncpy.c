@@ -6,7 +6,7 @@
  *@dest:temporal storage.
  *@src: This is source string
  *@n:the charater
- *Returns: this returns string
+ *Return: this returns string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
