@@ -3,7 +3,7 @@
 /**
  *string_toupper - This function changes string to uppercase
  *@strin: string as param
- *Return: This returns a string.
+ *Return: This returns a strin.
  */
 char *string_toupper(char *strin)
 {
@@ -12,7 +12,7 @@ char *string_toupper(char *strin)
 
 	while (strin[i] >= 'a' && strin[i] <= 'z')
 	{	strin[i] -= verify;
-	i++;
+		i++;
 	}
-	return (string);
+	return (strin);
 }
