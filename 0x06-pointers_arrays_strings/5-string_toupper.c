@@ -2,17 +2,18 @@
 
 /**
  *string_toupper - This function changes string to uppercase
- *@strin: string as param
- *Return: This returns a strin.
+ *@str: parameter which is a placeholder
+ *Return: This returns a str.
  */
-char *string_toupper(char *strin)
+char *string_toupper(char *str)
 {
+	int index = 0;
 
-	int i = 0, verify = 'a' - 'A';
-
-	while (strin[i] >= 'a' && strin[i] <= 'z')
-	{	strin[i] -= verify;
-		i++;
+	while (str[index++])
+	{
+		if (str[index] >= 'a' && str[index] <= 'z')
+			str[index] -= 32;
 	}
-	return (strin);
+
+	return (str);
 }
