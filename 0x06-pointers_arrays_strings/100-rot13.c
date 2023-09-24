@@ -14,7 +14,6 @@ char *rot13(char *str)
 
 	for (i = 0; *(str + i); i++)
 	{
-	
 		for (j = 0; j < 52; j++)
 		{
 			if (a[j] == *(str + j))
@@ -22,9 +21,8 @@ char *rot13(char *str)
 				*(str + i) = b[j];
 				break;
 			}
-		
 		}
-	
+
 	}
 	return (str);
 }
