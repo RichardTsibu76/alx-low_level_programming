@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *_print_cheesboard - prints cheeseboard
+ *print_cheesboard - prints cheeseboard
  *@a: A ponter variable
  *Return: returns nothing its void
  */
@@ -17,7 +17,6 @@ void print_chessboard(char (*a)[8])
 		for (c = 0; c <= 7; c++)
 		{
 			putchar(a[r][c]);
-		
 		}
 		putchar(10);
 	}
