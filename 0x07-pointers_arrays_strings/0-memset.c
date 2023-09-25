@@ -5,7 +5,7 @@
  *_memset - This fucntion in c fills memory with a constant byte
  *@s: A pointer variable to return
  *@n: constant
- *@b: constant byte 
+ *@b: constant byte
  *Return: returns a pointer (s)
  */
 char *_memset(char *s, char b, unsigned int n)
@@ -15,7 +15,7 @@ char *_memset(char *s, char b, unsigned int n)
 	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
-		/* Just changing the value stored in the first n memory */
+		/* Just changing the value stored in the first n memory location*/
 
 	}
 	return (s);
