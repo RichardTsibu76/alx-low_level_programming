@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *print_cheesboard - prints cheeseboard
+ *print_chessboard - prints cheeseboard
  *@a: A ponter variable
  *Return: returns nothing its void
  */
