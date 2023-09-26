@@ -8,25 +8,25 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int den = 0;
-	char *ptr = s;
+	int i, int j;
+	unsigned int result = 0;
 
-	while (*accept)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (*s)
+		for (j = 0; s[i] != '\0'; j++)
 		{
-			if (*accept == *s)
+			if (s[i] == accept[j])
 			{
-				den++;
+				result++;
 				break;
 
 			}
-			s++;
 
 		}
-		s = ptr;
-		accept++;
+
+	if (s[j] == '\0')
+		return (result);
 
 	}
-	return (len);
+	return (result);
 }
