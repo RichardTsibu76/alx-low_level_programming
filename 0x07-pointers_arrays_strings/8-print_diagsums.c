@@ -14,12 +14,11 @@ void print_diagsums(int *a, int size)
 	{
 		for (column = 0; column < size; column++)
 		{
-			if (column == row)
+		if (column == row)
 
 		sum1 += *(a + (row * size) + column);
-
-		   if ((row + column) == (size - 1))
-		 sum2 += *(a + (row * size) + column);
+	if ((row + column) == (size - 1))
+	sum2 += *(a + (row * size) + column);
 
 		}
 	}
