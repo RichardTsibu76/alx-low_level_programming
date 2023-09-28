@@ -4,8 +4,7 @@ int _helper_function(int n, int root);
 /**
  * _sqrt_recursion - This funtion returns natural sqr root
  *@n: intput
- *@root: square root checker
- *@Return: base on condition
+ *Return: base on condition
  */
 int _sqrt_recursion(int n)
 {
@@ -30,6 +29,6 @@ int _helper_function(int n, int root)
 		return (root);
 	if (root == (n / 2))
 		return (-1);
-	else
+
 	return (_helper_function(n, root + 1));
 }
