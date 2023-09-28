@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *puts_recursion - This function prints a string followed by (\n).
+ *_puts_recursion - This function prints a string followed by (\n).
  *@s: string pointer
  *Return: nothing in returns its void
  */
