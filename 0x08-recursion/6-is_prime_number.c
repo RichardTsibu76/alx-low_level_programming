@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
- * get_prime - This checks for prime or not
+ * check_prime - This checks for prime or not
  * @p: input
  * @c: input
  * Return: 0 or 1
  */
 int check_prime(int c, int p)
 {
-	if(p == c)
+	/* base case */
+	if (p == c)
 		return (1);
 	else if (p % c == 0)
 		return (0);
+	/* this means return to the condtion */
 	else
 		return (check_prime(c + 1, p));
 }
