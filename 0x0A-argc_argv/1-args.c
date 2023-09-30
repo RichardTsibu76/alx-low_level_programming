@@ -12,7 +12,7 @@ int main(int argc, __attribute__ ((unused)) char *argv[])
 {
 	int v = argc - 1;
 
-	printf("%d\n" , v);
+	printf("%d\n", v);
 
-	return(EXIT_SUCCESS);
+	return (EXIT_SUCCESS);
 }
