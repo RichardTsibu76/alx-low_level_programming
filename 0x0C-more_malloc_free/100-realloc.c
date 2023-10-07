@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
- *_reallocc - this fuction reallocates memory block
- *@ptr: the pointer
- *@old_size - old mem size
- *@new_size: new mem size to be reallocated
+ * _realloc - this fuction reallocates memory block
+ * @ptr: the pointer
+ * @old_size: old mem size
+ * @new_size: new mem size to be reallocated
+ * Return: returns
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
