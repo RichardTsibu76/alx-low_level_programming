@@ -1,4 +1,5 @@
-#include <stdio.h>
+#ifndef STRUCT_DOG_H
+#define STRUCT_DOG_H
 
 /**
  *struct dog - This is the struct datatype
@@ -12,3 +13,5 @@ struct dog
 	float age;
 	char *owner;
 };
+
+#endif
