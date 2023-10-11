@@ -10,5 +10,6 @@
 void print_name(char *name, void (*f)(char *))
 {
 	if (f && name)
+	/* f is the function pointer that point to a function as argum */
 	f(name);
 }
