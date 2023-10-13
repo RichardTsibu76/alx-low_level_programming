@@ -1,5 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <stddef.h>
+#include <stdio.h>
 /**
  * print_strings - prints strings followed by new line
  * @separator: this is more like delimeter
