@@ -10,18 +10,36 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int idx = 0, base10 = 0;
-
-	if (!b)
-		return (0);
-	while (b[idx])
 	{
-		if (b[idx] == '1' || b[idx] == '0')
-			base10 = (base10 << 1) + (b[idx] - '0');
-		else
-			return (0);
-		idx++;
-	}
-	return (base10);
+		unsigned int feed = 0;
+		int j = 0;
 
+		if (b == NULL)
+		{
+			return (0);
+		}
+
+		while (b[j] != '\0')
+		{
+			if (b[j] == '1')
+			{
+				feed = (feed << 1) | 1;
+			}
+			else if (b[j] == '0')
+			{
+				feed = feed << 1;
+			}
+
+			else
+			{
+				return (0);
+			}
+			j++;
+		}
+		return (feed);
+
+
+
+
+	}
 }
