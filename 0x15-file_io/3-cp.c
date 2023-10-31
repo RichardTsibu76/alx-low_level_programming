@@ -6,7 +6,7 @@ void copy_from_to(const char *file_from, const char *file_to);
 /**
  *main - main entry
  *@argc: this counts the argument
- *argv: array of characters or pointers to array
+ *@argv: array of characters or pointers to array
  *Return: This returns 0 as return value
  */
 int main(int argc, char *argv[])
