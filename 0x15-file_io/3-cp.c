@@ -4,11 +4,20 @@
 void copy_from_to(const char *file_from, const char *file_to);
 
 /**
+<<<<<<< HEAD
  *main - main entry
  *@argc: this counts the argument
  *@argv: array of characters or pointers to array
  *Return: This returns 0 as return value
  */
+=======
+ * main - The main file
+ * @argc: The argument counter
+ * @argv: The argument vector
+ * Return: Always 0
+ */
+
+>>>>>>> e430e9cf74e5e2468bb376d4d100faa39d5e1968
 int main(int argc, char *argv[])
 {
 	if (argc != 3)
@@ -19,6 +28,7 @@ int main(int argc, char *argv[])
 	copy_from_to(argv[1], argv[2]);
 	return (0);
 }
+<<<<<<< HEAD
 /**
  *copy_from_to - copies file content  to another file
  *@file_from: place of moving file
@@ -26,6 +36,16 @@ int main(int argc, char *argv[])
  *Return: exit(98), if file_from does not exist
  *	exit(99), if file_to can not be written to
  *	exit(100), if file descriptor can not be closed
+=======
+
+/**
+ * copy_from_to - The fucntion that copies the content of a file to another
+ * @file_from: The source file
+ * @file_to: The destination file
+ * Return: exit(98), if file_from does not exist
+ *          exit(99), if file_to can not be written to
+ *          exit(100), if file descriptor can not be closed
+>>>>>>> e430e9cf74e5e2468bb376d4d100faa39d5e1968
  */
 void copy_from_to(const char *file_from, const char *file_to)
 {
