@@ -22,8 +22,10 @@ int main(void)
 	{
 	printf("is zero\n");
 	}
-
 	else
+	{
+	print("is negative\n")	
+	}
 
 	return (0);
 }
