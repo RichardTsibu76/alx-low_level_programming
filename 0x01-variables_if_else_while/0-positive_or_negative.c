@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
- *main - This is the main entry
- *Return: return 0.
- */
+*main - This is the main entry
+*Return: Always 0.
+*/
 
 int main(void)
 {
@@ -12,20 +11,17 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-
 	if (n > 0)
 	{
-	printf("is positive\n");
+		printf("is positive\n");
 	}
-	else if(n == 0)
+	else if (n == 0)
 	{
-	printf("is zero\n");
+		printf("is zero"\n);
 	}
 	else
 	{
-	print("is negative\n")	
+		printf("is negative");
 	}
-
 	return (0);
 }
