@@ -8,21 +8,19 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *new_table = NULL;
+	hash_table_t *table;
 
-	/* allocate new table struct */
-	new_table = malloc(sizeof(hash_table_t));
-	if (!new_table) /* if malloc fails */
+	table = malloc(sizeof(hash_table_t));
+	if (table == NULL)
 		return (NULL);
-	new_table->size = size;
-
-	/* allocare array of pointers */
-	new_table->array = malloc(sizeof(void *) * size);
-	if (!new_table->array) /* if array alloc fails */
+	table->size = size;
+	table->array = calloc(size, sizeof(hash_node_t *));
+	if (table->array == NULL)
 	{
-		free(new_table);
+		free(table);
 		return (NULL);
 	}
 
-	return (new_table);
+
+	return (table);
 }
