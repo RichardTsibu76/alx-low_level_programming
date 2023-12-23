@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-
+#include <string.h>
 
 /**
  * create_element - Creates elements
