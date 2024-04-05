@@ -1,23 +1,22 @@
 #include <stdio.h>
 /**
- *main - This is the main entry
- *Return: This retuurns 0.
+ *main - Main entry
+ *Description: show all
+ *Return: 0
  */
 int main(void)
 {
-	int num;
+	int x;
 
-	for (num = 0; num <= 9; num++)
+	for (x = 48; x < 58; x++)
 	{
-		putchar (num + '0');
-
-	if (num <= 9)
-	{
-
-		putchar (',');
-		putchar (' ');
+		putchar(x);
+		if (x < 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
-	}
-	putchar (10);
+	putchar('\n');
 	return (0);
 }
