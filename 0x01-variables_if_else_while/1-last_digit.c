@@ -1,30 +1,27 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
-*main - This is the main entry
-*Return: The return value is 0.
-*/
+ *main - main block
+ *Description: Print statements based on the last digit of the random number.
+ *Return: 0
+ */
+
 int main(void)
 {
-	int n, l_d;/*l_d means the last digit*/
+	int n;
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	l_d = n % 10;
-	if (l_d > 5)
-	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, l_d);
-	}
-	if (l_d == 0)
-	{
-		printf("Last digit of %d is %d and is  0\n", n, l_d);
-	}
-	else
-	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l_d);
-	}
+	m = n % 10;
 
+	if (m > 5)
+		printf("Last digit of %i is %i and is greater than 5\n", n, m);
+	else if (m == 0)
+		printf("Last digit of %i is %i and is 0\n", n, m);
+	else
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, m);
 	return (0);
 }
